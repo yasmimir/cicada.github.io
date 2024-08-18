@@ -1,0 +1,121 @@
+@font-face{
+    font-family: CovesBold;
+    src: url(/Fontes/Coves\ Bold.otf)
+}
+@font-face{
+    font-family: CovesLight;
+    src: url(/Fontes/Coves\ Light.otf)
+}
+@font-face{
+    font-family: Agus-Sans;
+    src: url(/Fontes/Agus\ Sans\ Regular\ 400.otf)
+}
+@font-face{
+    font-family: Cinzel;
+    src: url(/Fontes/Cinzel-Bold.otf)
+}
+@font-face{
+    font-family: GothamRnd;
+    src: url(/Fontes/GothamRnd-Bold.otf)
+}
+.imitabotao{
+    display: inline;
+    cursor: pointer;
+    font-family: CovesBold;
+}
+.barra{
+    display: inline;
+}
+#btthome,
+#bttenig,
+#bttmist,
+#bttobje,
+#bttjoin{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    color: #c4c4c4;
+    font-family: CovesBold;
+}
+#btthome:hover,
+#bttenig:hover,
+#bttmist:hover,
+#bttobje:hover,
+#bttjoin:hover{
+    color: #191919;
+    background-color: #a2a2a2;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    animation: piscar 0.5s infinite alternate-reverse;
+}
+@keyframes piscar{
+    from {
+        background-color: #c4c4c4;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    to {
+        background-color: #ffffff;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}
+.home, .enig, .mist, .obje, .join{
+    margin: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    background-color: #00000064;
+    border-radius: 10px;
+    background-position: center;
+    padding: 10px;
+    display: none;
+}
+p:hover, .home:hover, .enig:hover, .mist:hover, .obje:hover .join:hover{
+    background-color: rgba(0, 0, 0, 0.773);
+}
+
+p:hover{
+    #body{
+        background-image: none;
+    }
+}
+
+p{
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.imitabotao:hover{
+    color: #ffffff;
+}
+.menu{
+    text-align: center;
+    display: inline;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    margin: -8px;
+    position: absolute;
+    background-color: #0000007d;
+}
+#body{
+    background: no-repeat;
+    background-image: url(/Imagens/Cicada\ 3301\ logo.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-color: #191919;
+    background-size: 50%;
+    color: #c4c4c4;
+    font-family: GothamRnd;
+    scrollbar-color: black;
+    scrollbar-face-color: #191919;
+}
