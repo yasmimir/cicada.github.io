@@ -7,7 +7,7 @@
 
     function go(a,b)
     {
-        let DisplayNone, DisplayBlock, BackgroundTroca
+        let DisplayNone, DisplayBlock
         if(b==1)
         {
             DisplayNone = home;
@@ -30,7 +30,7 @@
         }
 
         DisplayNone.style.display = 'none';
-
+        
         if(a==1)
         {
             DisplayBlock = home;
@@ -51,6 +51,17 @@
         {
             DisplayBlock = join;
         }
-
+        
         DisplayBlock.style.display = 'block';
+    }
+
+    function goes(b)
+    {
+        let BackgroundTroca
+        if(b==1)
+        {
+            BackgroundTroca = body;
+        }
+        BackgroundTroca.style.display = 'none';
+        
     }
