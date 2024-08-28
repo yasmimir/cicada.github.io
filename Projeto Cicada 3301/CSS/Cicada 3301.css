@@ -18,30 +18,69 @@
     font-family: GothamRnd;
     src: url(/Fontes/GothamRnd-Bold.otf)
 }
+::-webkit-scrollbar{
+    display: none;
+}
+
+#body{
+    background-color: #191919;
+    color: #ffffff;
+    font-family: CovesLight;
+    line-height: 27px;
+}
+
+/*Menu*/
+
 .imitabotao{
-    display: inline;
+    display: flex;
     cursor: pointer;
     font-family: CovesBold;
 }
-.barra{
-    display: inline;
+.menu{
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    margin: -8px;
+    position: absolute;
+    background-color: #ffffff;
 }
+.buttons{
+    justify-content: end;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/*Botões*/
+
 #btthome,
 #bttenig,
 #bttmist,
 #bttobje,
 #bttjoin{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     background: none;
     border: none;
     font-size: large;
     cursor: pointer;
     transition: 0.5s;
-    border-radius: 5px;
-    color: #c4c4c4;
+    border-bottom: 2px solid transparent;
+    color: #191919;
     font-family: CovesBold;
 }
 #btthome:hover,
@@ -49,42 +88,47 @@
 #bttmist:hover,
 #bttobje:hover,
 #bttjoin:hover{
-    color: #191919;
-    background-color: #a2a2a2;
-    padding-top: 4px;
-    padding-bottom: 4px;
     animation: piscar 0.5s infinite alternate-reverse;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 @keyframes piscar{
     from {
-        background-color: #c4c4c4;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        color: #000000;
+        border-bottom: 2px solid #000000;
     }
     to {
-        background-color: #ffffff;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        color: #a5a5a5;
+        border-bottom: 2px solid #a5a5a5;
     }
 }
-.home, .enig, .mist, .obje, .join{
-    margin: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+
+/*Conteúdo*/
+
+.home,
+.enig,
+.mist,
+.obje,
+.join{
+    margin-top: 120px;
+    margin-left: 15%;
+    margin-right: 15%;
     position: absolute;
     background-color: #00000064;
-    border-radius: 10px;
+    border-radius: 5px;
     background-position: center;
     padding: 10px;
     display: none;
-}
-p:hover, .home:hover, .enig:hover, .mist:hover, .obje:hover .join:hover{
-    background-color: rgba(0, 0, 0, 0.773);
+    font-weight: 200;
 }
 
-p:hover{
-    #body{
-        background-image: none;
+@media (max-width: 580px){
+    .home,
+    .enig,
+    .mist,
+    .obje,
+    .join{
+        margin-top: 180px;
     }
 }
 
@@ -92,30 +136,15 @@ p{
     padding: 3px;
     border-radius: 5px;
 }
-
-.imitabotao:hover{
-    color: #ffffff;
-}
-.menu{
+h1{
     text-align: center;
-    display: inline;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    margin: -8px;
-    position: absolute;
-    background-color: #0000007d;
 }
-#body{
-    background: no-repeat;
-    background-image: url(/Imagens/Cicada\ 3301\ logo.jpg);
-    background-position-x: center;
-    background-position-y: center;
-    background-attachment: fixed;
-    background-color: #191919;
-    background-size: 50%;
-    color: #c4c4c4;
-    font-family: GothamRnd;
-    scrollbar-color: black;
-    scrollbar-face-color: #191919;
+.img{
+    width: 100px;
+    margin-left: 10px;
+    color: indigo;
+}
+.icon{
+    width: 30px;
+    margin-left: 15px;
 }
