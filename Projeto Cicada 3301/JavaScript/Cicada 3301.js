@@ -65,3 +65,8 @@
         BackgroundTroca.style.display = 'none';
         
     }
+
+    const chk = document.getElementById('chk')
+    chk.addEventListener('change', () =>{
+        document.body.classList.toggle('escuro')
+    })
